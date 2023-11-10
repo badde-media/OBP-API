@@ -425,12 +425,12 @@
       <artifactId>scalikejdbc_${scala.version}</artifactId>
       <version>3.4.0</version>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>com.microsoft.sqlserver</groupId>
       <artifactId>mssql-jdbc</artifactId>
       <version>8.1.0.jre${java.version}-preview</version>
     </dependency>
-    <!-- scalikejdbc for call stored procedure end-->
+     scalikejdbc for call stored procedure end-->
 
     <dependency>
       <groupId>org.scala-lang.modules</groupId>
@@ -453,12 +453,12 @@
       <version>3.2.7-RELEASE</version>
     </dependency>
 
-    <!--macro cache-->
+    <!--macro cache
     <dependency>
       <groupId>com.github.OpenBankProject</groupId>
       <artifactId>macmemo</artifactId>
       <version>0.6-OBP-SNAPSHOT</version>
-    </dependency>
+    </dependency>-->
 
     <!-- util convert Future to js Promise
     <dependency>

@@ -17,7 +17,7 @@
         <repository>
             <id>artima</id>
             <name>Artima Maven Repository</name>
-            <url>http://repo.artima.com/releases</url>
+            <url>https://repo.artima.com/releases</url>
         </repository>
     </repositories>
 

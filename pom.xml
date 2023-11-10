@@ -11,12 +11,12 @@
   <inceptionYear>2011</inceptionYear>
   <properties>
     <scala.version>2.12</scala.version>
-    <scala.compiler>2.12.12</scala.compiler>
+    <scala.compiler>2.12.18</scala.compiler>
     <akka.version>2.5.32</akka.version>
     <akka-streams-kafka.version>2.0.5</akka-streams-kafka.version>
     <kafka.version>1.1.0</kafka.version>
     <avro.version>1.8.2</avro.version>
-    <lift.version>3.5.0</lift.version>
+    <lift.version>3.4.3</lift.version>
     <jetty.version>9.4.50.v20221201</jetty.version>
     <log4j.version>2.17.1</log4j.version>
     <obp-ri.version>2016.11-RC6-SNAPSHOT</obp-ri.version>
@@ -26,7 +26,7 @@
     <!-- vscaladoc settings -->
     <maven.scaladoc.vscaladocVersion>1.2-m1</maven.scaladoc.vscaladocVersion>
     <vscaladoc.links.liftweb.pathsufix>scaladocs/</vscaladoc.links.liftweb.pathsufix>
-    <vscaladoc.links.liftweb.baseurl>http://scala-tools.org/mvnsites/liftweb</vscaladoc.links.liftweb.baseurl>
+    <vscaladoc.links.liftweb.baseurl>https://scala-tools.org/mvnsites/liftweb</vscaladoc.links.liftweb.baseurl>
 
     <!--java version, can be: [8,9,10,11,12,13]-->
     <java.version>8</java.version>
@@ -48,7 +48,7 @@
     <repository>
       <id>java.net.maven3</id>
       <name>java.net Maven3 Repository</name>
-      <url>http://download.java.net/maven/3/</url>
+      <url>https://download.java.net/maven/3/</url>
     </repository>
     <repository>
       <id>scala-tools.snapshots</id>
@@ -84,17 +84,17 @@
       <dependency>
         <groupId>net.liftweb</groupId>
         <artifactId>lift-common_${scala.version}</artifactId>
-        <version>${lift.version}</version>
+        <version>3.5.0</version>
       </dependency>
       <dependency>
         <groupId>net.liftweb</groupId>
         <artifactId>lift-util_${scala.version}</artifactId>
-        <version>${lift.version}</version>
+        <version>3.5.0</version>
       </dependency>
       <dependency>
         <groupId>net.liftweb</groupId>
         <artifactId>lift-mapper_${scala.version}</artifactId>
-        <version>${lift.version}</version>
+        <version>3.5.0</version>
       </dependency>
       <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
       <dependency>
@@ -111,13 +111,13 @@
       <dependency>
         <groupId>org.scalatest</groupId>
         <artifactId>scalatest_${scala.version}</artifactId>
-        <version>3.0.8</version>
+        <version>3.2.17</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.scalactic</groupId>
         <artifactId>scalactic_${scala.version}</artifactId>
-        <version>3.0.8</version>
+        <version>3.2.17</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
@@ -129,10 +129,10 @@
         <plugin>
           <groupId>net.alchim31.maven</groupId>
           <artifactId>scala-maven-plugin</artifactId>
-          <version>4.3.1</version>
+          <version>4.8.1</version>
           <configuration>
             <scalaVersion>${scala.compiler}</scalaVersion>
-            <charset>${project.build.sourceEncoding}</charset>
+            <!--charset>${project.build.sourceEncoding}</charset-->
             <displayCmd>true</displayCmd>
             <jvmArgs>
               <jvmArg>-DpackageLinkDefs=file://${project.build.directory}/packageLinkDefs.properties</jvmArg>
@@ -167,7 +167,7 @@
         <plugin>
           <groupId>org.scalatest</groupId>
           <artifactId>scalatest-maven-plugin</artifactId>
-          <version>2.0.0</version>
+          <version>2.2.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -175,7 +175,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>${scala.version}</version>
+        <version>2.12</version>
         <configuration>
           <skipTests>true</skipTests>
         </configuration>
@@ -278,7 +278,7 @@
         <artifactId>maven-site-plugin</artifactId>
         <version>3.7.1</version>
       </plugin>
-      
+
       </plugins>
   </build>
   <reporting>
@@ -289,4 +289,5 @@
       </plugin>
     </plugins>
   </reporting>
+
 </project>
