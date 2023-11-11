@@ -56,7 +56,7 @@
         <dependency>
             <groupId>net.liftweb</groupId>
             <artifactId>lift-json_${scala.version}</artifactId>
-            <version>${lift.version}</version>
+            <version>3.5.0</version>
         </dependency>
         <!-- InheritableThreadLocal enhancement-->
         <dependency>

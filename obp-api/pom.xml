@@ -57,7 +57,8 @@
     <dependency>
       <groupId>net.databinder.dispatch</groupId>
       <artifactId>dispatch-lift-json_${scala.version}</artifactId>
-      <version>0.13.1</version>
+<!--      <version>0.13.1</version>-->
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
