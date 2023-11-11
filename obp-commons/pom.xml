@@ -14,10 +14,15 @@
     <name>Open Bank Project Commons</name>
 
     <repositories>
-        <repository>
+        <!--<repository>
             <id>artima</id>
             <name>Artima Maven Repository</name>
             <url>https://repo.artima.com/releases</url>
+        </repository>-->
+        <repository>
+            <id>mvnrepository</id>
+            <name>Central Repository</name>
+            <url>https://repo1.maven.org/maven2/</url>
         </repository>
     </repositories>
 
